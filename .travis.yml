@@ -1,0 +1,8 @@
+sudo: requierd
+services:
+        - docker
+before_install:
+ - docker build -t vor5tim/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true vor5tim/docker-react npm run test
