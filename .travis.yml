@@ -10,7 +10,7 @@ script:
 
 deploy:
   provider: gae
-  keyfile: "central-staging-599c6673b87e.json"
+  keyfile: "central-staging-599c6673b87e.json.enc"
   project: "central-staging-599c6673b87e"
   on:
           branch: master
