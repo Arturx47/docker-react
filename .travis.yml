@@ -7,10 +7,3 @@ before_install:
 
 script:
   - docker run -e CI=true vor5tim/docker-react npm run test
-
-deploy:
-  provider: gae
-  keyfile: "central-staging-599c6673b87e.json.enc"
-  project: "central-staging-599c6673b87e"
-  on:
-          branch: master
